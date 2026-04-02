@@ -2,7 +2,7 @@
 
 **Turn your bibliography into a document you can actually read.**
 
-BibBrief takes a BibTeX export — the kind you download from Scopus, Web of Science, or Zotero after a literature search — and converts it into a clean, structured Microsoft Word document. Every article gets its own entry: the title, a formatted reference, and the full abstract. Nothing is rewritten, summarised, or filtered out without your permission.
+BibBrief takes a BibTeX export — the kind you download from Scopus, Web of Science, or Zotero after a literature search — and converts it into a clean, structured Microsoft Word document. Every article gets its own entry: the title, a formatted reference, and the full abstract. 
 
 ---
 
