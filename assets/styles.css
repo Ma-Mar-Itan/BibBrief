@@ -1,0 +1,230 @@
+/* ============================================================
+   BibTeX → DOCX App  —  Minimal Academic Stylesheet
+   ============================================================ */
+
+/* ── Global reset & background ─────────────────────────────── */
+html, body, [data-testid="stAppViewContainer"],
+[data-testid="stApp"] {
+    background-color: #FAFAFA !important;
+    font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+/* ── Remove Streamlit decoration ───────────────────────────── */
+#MainMenu, footer, header { visibility: hidden; }
+[data-testid="stDecoration"] { display: none; }
+
+/* ── Main content area ─────────────────────────────────────── */
+.main .block-container {
+    max-width: 820px;
+    padding-top: 2.5rem;
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/* ── Sidebar ────────────────────────────────────────────────── */
+[data-testid="stSidebar"] {
+    background-color: #F4F4F4 !important;
+    border-right: 1px solid #E0E0E0;
+}
+[data-testid="stSidebar"] * {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.85rem;
+}
+[data-testid="stSidebar"] h1,
+[data-testid="stSidebar"] h2,
+[data-testid="stSidebar"] h3 {
+    font-size: 0.75rem !important;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #8A8A8A !important;
+    font-weight: 600;
+    margin-top: 1.2rem;
+    margin-bottom: 0.3rem;
+}
+
+/* ── Typography ─────────────────────────────────────────────── */
+h1 {
+    font-family: 'Georgia', serif;
+    font-size: 1.85rem !important;
+    font-weight: 400 !important;
+    color: #1A1A2E !important;
+    letter-spacing: -0.01em;
+    border-bottom: 2px solid #3D6B8F;
+    padding-bottom: 0.35rem;
+    margin-bottom: 0.2rem;
+}
+h2 {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.7rem !important;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #8A8A8A !important;
+    font-weight: 600 !important;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+h3 {
+    font-family: 'Georgia', serif;
+    font-size: 1rem !important;
+    color: #2C3E50 !important;
+    font-weight: 600 !important;
+}
+p {
+    color: #333333;
+    line-height: 1.65;
+}
+
+/* ── App title block ─────────────────────────────────────────── */
+.app-title {
+    margin-bottom: 0.1rem;
+}
+.app-subtitle {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.88rem;
+    color: #7A7A7A;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+/* ── Upload area ────────────────────────────────────────────── */
+[data-testid="stFileUploader"] {
+    border: 1.5px dashed #C8C8C8 !important;
+    border-radius: 4px !important;
+    background: #FFFFFF !important;
+    padding: 1rem;
+}
+[data-testid="stFileUploader"]:hover {
+    border-color: #3D6B8F !important;
+}
+
+/* ── Stat cards ─────────────────────────────────────────────── */
+.stat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 1.2rem 0;
+}
+.stat-card {
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    border-radius: 4px;
+    padding: 14px 16px;
+}
+.stat-value {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #1A1A2E;
+    line-height: 1;
+    margin-bottom: 4px;
+}
+.stat-label {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    color: #9A9A9A;
+}
+
+/* ── Section divider ────────────────────────────────────────── */
+.section-rule {
+    border: none;
+    border-top: 1px solid #E8E8E8;
+    margin: 2rem 0 1.5rem 0;
+}
+
+/* ── Preview table ───────────────────────────────────────────── */
+[data-testid="stDataFrame"] {
+    border: 1px solid #EBEBEB !important;
+    border-radius: 4px;
+    font-size: 0.82rem;
+}
+[data-testid="stDataFrame"] thead {
+    background: #F6F6F6;
+}
+
+/* ── Buttons ─────────────────────────────────────────────────── */
+.stButton > button {
+    font-family: 'Helvetica Neue', Arial, sans-serif !important;
+    font-size: 0.82rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.06em !important;
+    text-transform: uppercase;
+    background-color: #1A1A2E !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    border-radius: 3px !important;
+    padding: 0.55rem 1.4rem !important;
+    transition: background 0.15s ease;
+}
+.stButton > button:hover {
+    background-color: #3D6B8F !important;
+}
+
+/* Download button different style */
+[data-testid="stDownloadButton"] > button {
+    background-color: #FFFFFF !important;
+    color: #1A1A2E !important;
+    border: 1.5px solid #1A1A2E !important;
+}
+[data-testid="stDownloadButton"] > button:hover {
+    background-color: #F0F4F8 !important;
+}
+
+/* ── Progress bar ────────────────────────────────────────────── */
+[data-testid="stProgressBar"] > div {
+    background-color: #3D6B8F !important;
+}
+
+/* ── Alert / info boxes ──────────────────────────────────────── */
+[data-testid="stAlert"] {
+    border-radius: 3px !important;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.85rem;
+}
+
+/* ── Selectbox / inputs ──────────────────────────────────────── */
+.stSelectbox > div > div {
+    border-radius: 3px !important;
+    border-color: #D8D8D8 !important;
+    font-size: 0.85rem;
+}
+
+/* ── Success / warning banners ───────────────────────────────── */
+.success-banner {
+    background: #F0F7F0;
+    border-left: 3px solid #4A8F6B;
+    border-radius: 0 3px 3px 0;
+    padding: 0.75rem 1rem;
+    margin: 1rem 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.85rem;
+    color: #2E5A3E;
+}
+.warning-banner {
+    background: #FDF8F0;
+    border-left: 3px solid #C8903A;
+    border-radius: 0 3px 3px 0;
+    padding: 0.75rem 1rem;
+    margin: 1rem 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.85rem;
+    color: #7A4E1A;
+}
+
+/* ── Expander ────────────────────────────────────────────────── */
+details {
+    border: 1px solid #EBEBEB !important;
+    border-radius: 4px !important;
+    background: #FDFDFD;
+}
+summary {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #5A5A5A;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+}
