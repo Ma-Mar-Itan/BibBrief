@@ -46,7 +46,7 @@ The document is structured so it can be navigated easily in Word — you can jum
 
 ## Core features
 
-- **Handles large files.** BibBrief is designed for real-world literature searches. Files with up to approximately 6,000 entries are supported.
+- **Handles large files.** BibBrief is designed for real-world literature searches. Files with up to approximately 20,000 entries are supported.
 - **Flexible entry inclusion.** You can include all entries, restrict to journal articles and conference papers, or limit to entries that have an abstract.
 - **Multiple sort options.** Sort alphabetically by title, by year (oldest or newest first), or preserve the original order from your export file.
 - **Missing abstracts handled gracefully.** If an entry does not include an abstract, the document reads *Abstract: Not available.* — it is never silently blank.
